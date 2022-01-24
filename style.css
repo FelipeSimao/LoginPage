@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@300;400;900&display=swap');
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #1A202C;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    text-decoration: none;
+    border: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+main .container-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #F7FAFC;
+}
+
+main .container-banner img{
+    width: 80%;
+    animation: toFloat 4s infinite;
+}
+
+main .container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 90vh;
+    margin: 20px;
+}
+
+main .container-form div h2{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+main .container-form div h1{
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+}
+
+main .container-form div form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main .container-form div form label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+main .container-form div form .input-login{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: solid 1px #E8E8E8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+main .container-form div form .input-login:focus{
+    transition: 0.5s;
+    border-bottom: solid 2px #04C35C;
+}
+
+main .container-form div form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main .container-form div form div a{
+    color: #2B6CB0;
+}
+
+main .container-form div form #confirm{
+    width: 100%;
+    background-color: #04C35C;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+main .container-form div form #confrim-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1A202C;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+} 
+
+#googleIcon{
+    width: 20px;
+    margin-right: 5px;
+}
+
+main .container-form div form button:hover{
+    transition: 0.5s;
+    opacity: 80%;
+}
+
+main .container-form div p{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main .container-form div #register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container-form div p span{
+    color: #2B6CB0;
+    margin-left: 5px;
+}
+/* animations */
+
+@keyframes toFloat{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/*  responsive */
+
+@media(max-width: 600px){
+
+    main .container-banner{
+
+        display: none;
+    }
+
+    main .container-form{
+        width: 100%;
+    }
+}
