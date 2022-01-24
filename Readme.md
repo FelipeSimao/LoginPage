@@ -12,3 +12,7 @@
 > Tenho como objetivo o aprendizado e aperfeiçoamento da linguagem.
 
 ## Resultado:
+
+<div align="center" >
+  <img src="https://user-images.githubusercontent.com/78655591/150876204-86adf22d-3798-4e70-8753-b50da1bd1a85.JPG" width="80%" >
+</div>
